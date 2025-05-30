@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">.cloths</div>
+      <nav class="nav-links">
+        <a href="#">Dashboard</a>
+        <a href="#">Upload Products</a>
+        <a href="#">Orders</a>
+        <a href="#">Delivery Tracking</a>
+        <a href="#">Stocks</a>
+        <a class="active" href="#">Expense</a>
+        <a href="#">Reviews & Ratings</a>
+        <a href="#">Advertisement</a>
+      </nav>
+      <div class="logout">Log Out</div>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <input type="text" placeholder="Search....." class="search-box" />
+        <div class="profile">
+          <div class="avatar"></div>
+          <div class="user-info">
+            <span>Joseph</span>
+            <small>Admin</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="expense-form">
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" value="2023-11-15" />
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <input type="text" value="Electricity" />
+        </div>
+        <div class="form-group">
+          <label>Sub Category</label>
+          <input type="text" placeholder="Lorem ipsum dolor" />
+        </div>
+        <div class="form-group">
+          <label>Amount</label>
+          <input type="text" value="₹ 13,000" />
+        </div>
+        <div class="form-group full-width">
+          <label>Description</label>
+          <textarea rows="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum erat ac risus imperdiet</textarea>
+        </div>
+        <div class="status">
+          <label>Status</label>
+          <div>
+            <label><input type="radio" name="status" checked /> Paid</label>
+            <label><input type="radio" name="status" /> Unpaid</label>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="discard">Discard</button>
+          <button class="save">Save</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
